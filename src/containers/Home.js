@@ -1,5 +1,4 @@
 import React from "react"
-import { Grid, Row, Col, Clearfix } from "react-bootstrap"
 import "./Home.css"
 
 export default () =>
