@@ -1,14 +1,13 @@
-.Home .home-headline {
-    padding: 80px 0;
+.Home {
+    padding: 200px 0;
     text-align: center;
-  }
+}
   
-  .Home .home-headline h1 {
+.Home .home-headline h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
-  }
+}
   
-  .Home .home-headline p {
-    color: #999;
-  }
-   
+.Home .home-headline p {
+    color: #CCC;
+}

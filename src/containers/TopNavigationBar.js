@@ -3,9 +3,11 @@ import { Nav, Navbar, NavItem } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import { LinkContainer } from "react-router-bootstrap"
 
+import "./TopNavigationBar.css"
+
 export default () => 
     <Fragment>
-        <Navbar fluid collapseOnSelect>
+        <Navbar id="TopNavigationBar" fluid collapseOnSelect fixedTop={true}>
             <Navbar.Header>
                 <Navbar.Brand>
                     <Link to="/">Home</Link>
