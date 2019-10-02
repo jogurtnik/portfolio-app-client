@@ -7,9 +7,19 @@ import Routes from "./Routes"
 import "./App.css"
 
 class App extends Component {
+  constructor() {
+    super()
+
+    this.state = {
+      prop: "mockProp"
+    }
+  }
   render() {
+    const childProps = {
+      prop: this.state.prop
+    }
     return (
-      <div className="App container">
+        <div className="App container">
         <Navbar fluid collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
@@ -22,16 +32,19 @@ class App extends Component {
               <LinkContainer to="/projects">
                 <NavItem>Projects</NavItem>
               </LinkContainer>
-              <LinkContainer to="/abpute-me">
+              <LinkContainer to="/abouteMe">
                 <NavItem>About me</NavItem>
               </LinkContainer>
               <LinkContainer to="/contact">
                 <NavItem>Contact</NavItem>
               </LinkContainer>
             </Nav>
+            <Nav pullRight>
+              <NavItem>Dark mode:</NavItem>
+            </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <Routes />
+        <Routes childProps={childProps} />
       </div>
     )
   }
